@@ -125,6 +125,11 @@ const char *log_level_string(log_LogLevel level)
     return level_strings[level];
 }
 
+const log_LogLevel get_log_level() {
+    log_LogLevel level = L.std_level;
+    return level;
+}
+
 void log_set_lock(log_LockFn fn, void *lock)
 {
     L.lock_fn = fn;
