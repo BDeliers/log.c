@@ -125,7 +125,7 @@ const char *log_level_string(log_LogLevel level)
     return level_strings[level];
 }
 
-const log_LogLevel get_log_level() {
+const log_LogLevel get_log_level(void) {
     log_LogLevel level = L.std_level;
     return level;
 }
