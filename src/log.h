@@ -76,6 +76,9 @@ log_LogLevel;
 /// @return         String representing the corresponding log level
 const char *log_level_string(log_LogLevel level);
 
+/// @brief          Get the set log level as enum
+/// @return         Configured log level
+const log_LogLevel get_log_level(void);
 
 /// @brief          Set the process lock function
 /// @remark         The lock function is passed true to acquire the resource, false to release
